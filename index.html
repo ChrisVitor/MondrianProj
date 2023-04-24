@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .grid-container {
+      background-color: black;
+      height: 748px;
+      width: 748px;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 9px;
+      grid-template-columns: 320px  198px 153px 50px;
+      grid-template-rows: 414px 132px 155px 20px;
+    }
+    .mondrian1 {
+      background-color: red;
+    }
+    .mondrian2 {
+      grid-column: span 3;
+      background-color: #F0F1EC;
+    }
+    .mondrian5 {
+      grid-area: 2 / 1 / 4 / 2;
+      background-color: #F0F1EC;
+    }
+    .mondrian6 {
+      grid-area: 2 / 2 / 4 / 4;
+      background-color: #F0F1EC;
+    }
+    .mondrian8 {
+      grid-area: 2 / 4 / 3 / 5;
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .mondrian12 {
+      grid-area: 3 / 4 / 5 / 5;
+      background-color: #F0F1EC;
+    }
+    .mondrian13 {
+      grid-area: 4 / 1 / 5 / 2;
+      background-color: #F0F1EC;
+    }
+    .mondrian14 {
+      grid-area: 4 / 2 / 5 / 3;
+      background-color: #F9D01E;
+    }
+    .mondrian15 {
+      grid-area: 4 / 3 / 5 / 4;
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="mondrian1"></div>
+    <div class="mondrian2"></div>
+    <div class="mondrian3"></div>
+    <div class="mondrian4"></div>
+    <div class="mondrian5"></div>
+    <div class="mondrian6"></div>
+    <div class="mondrian7"></div>
+    <div class="mondrian8"></div>
+    <div class="mondrian9"></div>
+    <div class="mondrian10"></div>
+    <div class="mondrian11"></div>
+    <div class="mondrian12"></div>
+    <div class="mondrian13"></div>
+    <div class="mondrian14"></div>
+    <div class="mondrian15"></div>
+    <div class="mondrian16"></div>
+  </div>
+</body>
+
+</html>
